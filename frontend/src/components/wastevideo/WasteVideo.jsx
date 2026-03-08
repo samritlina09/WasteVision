@@ -15,6 +15,8 @@ let classifier;
 // image upload wala
 function WasteVideo() {
 
+  
+
   const inputRef = useRef();
   const [imageData, setImageData] = useState('');
   const [start, setStart] = useState(false);

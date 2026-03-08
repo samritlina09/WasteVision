@@ -29,7 +29,7 @@ const HomePage = () => {
 
 
   const [text, setText] = useState('');
-  const fullText = "WELCOME TO ECOSAVVY";
+  const fullText = "WELCOME TO WASTEVISION";
 
   useEffect(() => {
     let i = 0;
@@ -56,7 +56,7 @@ const HomePage = () => {
               }`}
             style={{ paddingBottom: "6.5%", paddingRight: '13px' }}
           >
-            <h1 className="italic text-6xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-500  underline    -translate-y-1/2 z-10  ">{text}
+            <h1 className="italic text-6xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-500  underline    -translate-y-1/2 z-10 whitespace-nowrap">{text}
               {/* <span>W</span>ELCOME<span className="text-yellow-300"> HOME</span> */}
             </h1>
 
@@ -109,7 +109,7 @@ const HomePage = () => {
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Why EcoSavvy?
+              Why WasteVision?
             </h1>
             <p className="mb-8 leading-relaxed">
               Our app can help you identify recyclable items and properly dispose of them, reducing waste and saving money. By doing so, you can make a positive impact on the environment and support the recycling industry, which is facing economic and diplomatic challenges.

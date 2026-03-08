@@ -20,9 +20,9 @@ const Login = () => {
       event.preventDefault();
       await axios
          .post("http://localhost:8000/api/login/", {
-            email: email,
-            password: password,
-         })
+   email: email,
+   password: password,
+})
          .then((response) => {
             console.log(response.data);
             navigate("/home");
@@ -38,8 +38,8 @@ const Login = () => {
             <h1 className="text-3xl font-semibold text-center text-green-500 underline">
                Sign in
             </h1>
-            <form className="mt-6">
-               <div className="mb-2">
+<form className="mt-6" onSubmit={handleSubmit}>
+                  <div className="mb-2">
                   <label
                      htmlFor="email"
                      className="block font-semibold text-gray-800 text-2xl"
@@ -72,12 +72,11 @@ const Login = () => {
                </Link>
                <div className="mt-6">
                   <button
-                     type="submit"
-                     onClick={handleSubmit}
-                     className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 text-xl transform bg-green-500 rounded-md hover:bg-green-400 focus:outline-none focus:bg-green-600"
-                  >
-                     Login
-                  </button>
+type="submit"
+className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 text-xl transform bg-green-500 rounded-md hover:bg-green-400 focus:outline-none focus:bg-green-600"
+>
+Login
+</button>
                </div>
             </form>
 

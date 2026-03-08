@@ -7,8 +7,7 @@ const Footer = () => {
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <img className='h-10' src={Leaf} />
-            <span class="ml-3 text-xl">EcoSavvy</span>
-          </a>
+<span class="ml-3 text-xl">WasteVision</span>          </a>
           <p class="mt-2 text-sm text-gray-500">We send waste at its correct place!</p>
         </div>
         <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
@@ -75,7 +74,7 @@ const Footer = () => {
                 <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">0123456789</a>
               </li>
               <li>
-                <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">ecosavvy@gmail.com</a>
+                <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">wastevision@gmail.com</a>
               </li>
             </nav>
           </div>
@@ -83,7 +82,7 @@ const Footer = () => {
       </div>
       <div class="bg-gray-200">
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 EcoSavvy —
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 WasteVision —
             <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Debuggers</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

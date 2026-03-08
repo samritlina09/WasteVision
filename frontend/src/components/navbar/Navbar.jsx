@@ -16,14 +16,18 @@ const Navbar = () => {
          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <Link to="/home" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                <img className='h-10' src={Leaf} alt="leaf" />
-               <span className="ml-3 text-2xl">EcoSavvy</span>
+               {/* <span className="ml-3 text-2xl">WasteVision</span> */
+               <span className="ml-3 text-3xl font-bold text-green-800">WasteVision</span>}
             </Link>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center cursor-pointer ">
                <Link to="/home" className="mr-5 hover:text-gray-900 scroll-smooth">Home</Link>
                <Link to="/video" className="mr-5 hover:text-gray-900">WebCam</Link>
                <Link to="/image" className="mr-5 hover:text-gray-900">ImageUpload</Link>
-               <Link to="/predictionlist" className="mr-5 hover:text-gray-900">Prediction List</Link>
+<Link to="/pickup" className="mr-5 hover:text-gray-900">Book Pickup</Link>
                <Link to="/footer" className="mr-5 hover:text-gray-900">Contact</Link>
+               <Link to="/donate" className="mr-5 hover:text-gray-900">
+Donate Items
+</Link>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onClick={()=>setChange(!change)}>
                {change ? <Link to="/login">Login</Link> :<Link to="/">Logout</Link>}

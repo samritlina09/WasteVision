@@ -9,13 +9,17 @@ import WasteVideo from './components/wastevideo/WasteVideo'
 import Landing from "./components/Landing";
 import './App.css'
 import PredictionList from "./components/predictions/PredictionList";
+import Pickup from "./components/pickup/pickup.jsx";
+import Donate from "./components/donate/donate.jsx";
 
 function App() {
+
   return (
     <div className="App">
 
       <BrowserRouter>
       <Navbar/>
+
         <Routes>
           <Route path="/" element={<Landing/>}/>
           <Route path="/home" element={<HomePage/>} />
@@ -24,9 +28,14 @@ function App() {
           <Route path="/video" element={<WasteVideo2/>}/>
           <Route path="/image" element={<WasteVideo/>}/>
           <Route path="/predictionlist" element={<PredictionList/>}/>
+          <Route path="/pickup" element={<Pickup/>}/>
+          <Route path="/donate" element={<Donate/>}/>
         </Routes>
+
       <Footer/>
+
       </BrowserRouter>
+
     </div>
   );
 }
